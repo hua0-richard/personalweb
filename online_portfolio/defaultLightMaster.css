@@ -804,3 +804,51 @@ body {
 
 
 }
+
+.expand {
+	display: flex; 
+	justify-content: space-between;
+}
+
+.expand-clicker {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+
+#elab5 {
+	display: none;
+}
+
+#elab4 {
+
+}
+
+#elab3 {
+
+}
+
+#elab2 {
+
+}
+
+#elab1 {
+
+}
+
+#down5 {
+	display: inline;
+}
+
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+h6 {
+	margin-top: 10px; 
+	padding: 0;
+}
+

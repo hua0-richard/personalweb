@@ -157,3 +157,14 @@ function scrollAnchors(e, respond = null) {
         }
     }, 100);
 }
+
+// expand descriptions
+const expand5 = document.getElementById("elab5")
+const expand4 = document.getElementById("elab4")
+const expand3 = document.getElementById("elab3")
+const expand2 = document.getElementById("elab2")
+const expand1 = document.getElementById("elab1")
+
+
+
+

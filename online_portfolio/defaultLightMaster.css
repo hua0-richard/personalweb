@@ -122,6 +122,7 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	background-color: var(--scheme1);
+	margin-bottom: 30px;
 }
 
 .secText {
@@ -131,20 +132,52 @@ body {
 
 .showBigContainer {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	color: var(--scheme2);
 	padding-bottom: 48px;
 }
 
-.showContainer {
+.skillCat {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.skillTitle {
+	width: 300px;
+	display: flex;
+	justify-content: center;
+}
+
+.skillIcon {
+	width: 600px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.circleSkill {
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 64px;
+	width: 64px;
+	border-radius: 50%;
+	background-color: aqua;
+}
+
+.skillGrouping {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+}
+
+.skillText {
+	width: 100%;
+	display: flex;
 	justify-content: center;
-	background-color: var(--scheme1);
-	color: var(--scheme2);
-	text-align: center;
-	margin: 24px 24px;
 }
 
 .labelC{
@@ -154,6 +187,8 @@ body {
 
 .fill {
 	width: 100%;
+	display: flex;
+	justify-content: center;
 	background-color: var(--scheme1);
 }
 
@@ -507,8 +542,29 @@ body {
 	}
 	
 	.showBigContainer {
+		width: auto;
 		display: flex; 
 		flex-direction: column; 
+	}
+
+	.skillCat {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.skillTitle {
+		display: flex;
+		width: auto;
+	}
+
+	.skillIcon {
+		display: flex;
+		width: auto;
+	}
+
+	.circleSkill {
+		width: 56px;
+		height: 56px;
 	}
 
 	.decorationContainer {
@@ -606,6 +662,7 @@ body {
 	}
 	
 	.showBigContainer {
+		width: auto;
 		display: flex; 
 		flex-direction: column; 
 	}
@@ -802,7 +859,10 @@ body {
 		text-align: left; 
 	}
 
-
+	.circleSkill {
+		height: 36px;
+		width: 36px;
+	}
 }
 
 /* expandable descriptions */

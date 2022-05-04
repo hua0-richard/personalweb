@@ -705,3 +705,48 @@ body {
 
 }
 
+/* expandable descriptions */
+.expand {
+	display: flex; 
+	justify-content: space-between;
+}
+
+.expand-clicker {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+
+#elabDesc5 {
+	display: none;	
+}
+
+#elabDesc4 {
+	display: none;	
+}
+
+#elabDesc3 {
+	display: none;	
+}
+
+#elabDesc2 {
+	display: none;	
+}
+
+#elabDesc1 {
+	display: none;	
+} 
+
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+h6 {
+	margin-top: 10px; 
+	padding: 0;
+}
+
+

@@ -805,6 +805,7 @@ body {
 
 }
 
+/* expandable descriptions */
 .expand {
 	display: flex; 
 	justify-content: space-between;

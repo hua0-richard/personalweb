@@ -159,11 +159,41 @@ function scrollAnchors(e, respond = null) {
 }
 
 // expand descriptions
-const expand5 = document.getElementById("elab5")
-const expand4 = document.getElementById("elab4")
-const expand3 = document.getElementById("elab3")
-const expand2 = document.getElementById("elab2")
-const expand1 = document.getElementById("elab1")
+const expand5 = document.getElementById("elab5");
+const expand4 = document.getElementById("elab4");
+const expand3 = document.getElementById("elab3");
+const expand2 = document.getElementById("elab2");
+const expand1 = document.getElementById("elab1");
+
+expand5.addEventListener("click", function() {
+    const chevronDown = document.getElementsByClassName("fa-chevron-down");
+    const chevronUp = document.getElementsByClassName("fa-chevron-up");
+    const desc = document.getElementById("elabDesc5"); 
+    if (desc.style.display == "inline") {
+        chevronDown[0].style.display = "inline";
+        chevronUp[0].style.display = "none";
+        desc.style.display = "none";
+    } else {
+        desc.style.display = "inline";
+        chevronDown[0].style.display = "none";
+        chevronUp[0].style.display = "inline";
+    }
+});
+
+expand4.addEventListener("click", function() {
+    const chevronDown = document.getElementsByClassName("fa-chevron-down");
+    const chevronUp = document.getElementsByClassName("fa-chevron-up");
+    const desc = document.getElementById("elabDesc4"); 
+    if (desc.style.display == "inline") {
+        chevronDown[1].style.display = "inline";
+        chevronUp[1].style.display = "none";
+        desc.style.display = "none";
+    } else {
+        desc.style.display = "inline";
+        chevronDown[1].style.display = "none";
+        chevronUp[1].style.display = "inline";
+    }
+});
 
 
 

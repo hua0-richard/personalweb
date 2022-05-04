@@ -195,6 +195,52 @@ expand4.addEventListener("click", function() {
     }
 });
 
+expand3.addEventListener("click", function() {
+    const chevronDown = document.getElementsByClassName("fa-chevron-down");
+    const chevronUp = document.getElementsByClassName("fa-chevron-up");
+    const desc = document.getElementById("elabDesc3"); 
+    if (desc.style.display == "inline") {
+        chevronDown[2].style.display = "inline";
+        chevronUp[2].style.display = "none";
+        desc.style.display = "none";
+    } else {
+        desc.style.display = "inline";
+        chevronDown[2].style.display = "none";
+        chevronUp[2].style.display = "inline";
+    }
+});
+
+expand2.addEventListener("click", function() {
+    const chevronDown = document.getElementsByClassName("fa-chevron-down");
+    const chevronUp = document.getElementsByClassName("fa-chevron-up");
+    const desc = document.getElementById("elabDesc2"); 
+    if (desc.style.display == "inline") {
+        chevronDown[3].style.display = "inline";
+        chevronUp[3].style.display = "none";
+        desc.style.display = "none";
+    } else {
+        desc.style.display = "inline";
+        chevronDown[3].style.display = "none";
+        chevronUp[3].style.display = "inline";
+    }
+});
+
+expand1.addEventListener("click", function() {
+    const chevronDown = document.getElementsByClassName("fa-chevron-down");
+    const chevronUp = document.getElementsByClassName("fa-chevron-up");
+    const desc = document.getElementById("elabDesc1"); 
+    if (desc.style.display == "inline") {
+        chevronDown[4].style.display = "inline";
+        chevronUp[4].style.display = "none";
+        desc.style.display = "none";
+    } else {
+        desc.style.display = "inline";
+        chevronDown[4].style.display = "none";
+        chevronUp[4].style.display = "inline";
+    }
+});
+
+
 
 
 

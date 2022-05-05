@@ -1,2 +1,4 @@
 # Personal Website
-A personal portfolio website I created.
+Personal Portfolio Website
+Built using HTML/CSS/JavaScript
+

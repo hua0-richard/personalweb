@@ -374,6 +374,11 @@ body {
  /*scroll to top button */
 
  .top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
  	position: fixed;
  	bottom: 40px;
  	right:40px;
@@ -382,26 +387,24 @@ body {
  	outline: none;
  	background-color: var(--scheme3);
 	color: var(--scheme1);
-	padding-top: 12px; 
-	padding-bottom: 12px;
-	padding-left: 15px;
-	padding-right: 15px;
 	border-radius: 50%; 
+	text-decoration: none;
  }
 
  .light {
- 	position: fixed;
- 	bottom: 110px;
- 	right:40px;
- 	z-index: 100;
- 	border: none;
- 	outline: none;
- 	background-color: var(--scheme3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	bottom: 110px;
+	right:40px;
+	z-index: 100;
+	border: none;
+	outline: none;
+	background-color: var(--scheme3);
 	color: var(--scheme1);
-	padding-top: 12px; 
-	padding-bottom: 12px;
-	padding-left: 15px;
-	padding-right: 15px;
 	border-radius: 50%; 
  }
 

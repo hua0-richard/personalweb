@@ -374,8 +374,11 @@ body {
  /*scroll to top button */
 
  .top {
-	width: 100px;
-	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
  	position: fixed;
  	bottom: 40px;
  	right:40px;
@@ -385,18 +388,22 @@ body {
  	background-color: var(--scheme3);
 	color: var(--scheme1);
 	border-radius: 50%; 
+	text-decoration: none;
  }
 
  .light {
-	width: 100px;
-	height: 100px;
- 	position: fixed;
- 	bottom: 110px;
- 	right:40px;
- 	z-index: 100;
- 	border: none;
- 	outline: none;
- 	background-color: var(--scheme3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	position: fixed;
+	bottom: 110px;
+	right:40px;
+	z-index: 100;
+	border: none;
+	outline: none;
+	background-color: var(--scheme3);
 	color: var(--scheme1);
 	border-radius: 50%; 
  }

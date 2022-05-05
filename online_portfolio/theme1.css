@@ -575,8 +575,14 @@ body {
 	}
 
 	.circleSkill {
+		margin-left: 10px;
+		margin-right: 10px;
 		width: 56px;
 		height: 56px;
+	}
+
+	.skillText {
+		font-size: 14px;
 	}
 
 	.decorationContainer {
@@ -872,8 +878,12 @@ body {
 	}
 
 	.circleSkill {
-		height: 36px;
-		width: 36px;
+		height: 48px;
+		width: 48px;
+	}
+
+	.skillText {
+		font-size: 12px;
 	}
 }
 

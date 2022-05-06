@@ -240,7 +240,33 @@ expand1.addEventListener("click", function() {
     }
 });
 
+// hover state descriptions
+const linkedin = document.getElementById("linkedin");
+const github = document.getElementById("github");
+const resume = document.getElementById("resume");
 
+linkedin.addEventListener("mouseenter", function() {
+    document.getElementById("bp1").style.display = "block";
+});
 
+linkedin.addEventListener("mouseleave", function() {
+    document.getElementById("bp1").style.display = "none";
+});
+
+github.addEventListener("mouseenter", function() {
+    document.getElementById("bp2").style.display = "block";
+});
+
+github.addEventListener("mouseleave", function() {
+    document.getElementById("bp2").style.display = "none";
+});
+
+resume.addEventListener("mouseenter", function() {
+    document.getElementById("bp3").style.display = "block";
+});
+
+resume.addEventListener("mouseleave", function() {
+    document.getElementById("bp3").style.display = "none";
+});
 
 

@@ -45,6 +45,32 @@ body {
 }
 
 /* section 1 */
+#bp1 { margin-top: 5px; display: none; }
+
+#bp2 { margin-top: 5px; display: none; }
+
+#bp3 { margin-top: 5px; display: none; }
+
+.triangle {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid var(--scheme2);;
+	margin-left: 40%;
+}
+
+.button-purpose {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3px;
+	background-color: var(--scheme2);
+	color: var(--scheme1);
+	font-size: 12px;
+	border-radius: 4px;
+}
+
 .containColumn {
 	display: flex;
 	flex-direction: column;
@@ -75,6 +101,7 @@ body {
 }
 
 .containerButton {
+	margin-top: 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;

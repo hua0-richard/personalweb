@@ -244,8 +244,12 @@ expand1.addEventListener("click", function() {
 const linkedin = document.getElementById("linkedin");
 const github = document.getElementById("github");
 const resume = document.getElementById("resume");
+ 
 
 linkedin.addEventListener("mouseover", function() {
+    if (window.innerWidth < 900) {
+        return;
+    }
     document.getElementById("bp1").style.display = "block";
 });
 
@@ -254,6 +258,9 @@ linkedin.addEventListener("mouseleave", function() {
 }); 
 
 github.addEventListener("mouseenter", function() {
+    if (window.innerWidth < 900) {
+        return;
+    }
     document.getElementById("bp2").style.display = "block";
 });
 
@@ -262,6 +269,9 @@ github.addEventListener("mouseleave", function() {
 });
 
 resume.addEventListener("mouseenter", function() {
+    if (window.innerWidth < 900) {
+        return;
+    }
     document.getElementById("bp3").style.display = "block";
 });
 

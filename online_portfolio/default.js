@@ -245,13 +245,13 @@ const linkedin = document.getElementById("linkedin");
 const github = document.getElementById("github");
 const resume = document.getElementById("resume");
 
-linkedin.addEventListener("mouseenter", function() {
+linkedin.addEventListener("mouseover", function() {
     document.getElementById("bp1").style.display = "block";
 });
 
 linkedin.addEventListener("mouseleave", function() {
     document.getElementById("bp1").style.display = "none";
-});
+}); 
 
 github.addEventListener("mouseenter", function() {
     document.getElementById("bp2").style.display = "block";

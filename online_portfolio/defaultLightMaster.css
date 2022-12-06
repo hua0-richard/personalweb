@@ -1,8 +1,10 @@
 :root {
-	--scheme1: #e8e9ec;
-	--scheme2: #2d539e;
-	--scheme3: #262a3f; 
+	--scheme2: #2596be ;
+	--scheme3: black;
+	--scheme1: white; 
 }
+
+/* #14397d  77b5d9 d7eaf3*/
 
 html {
 	scroll-behavior: smooth;
@@ -11,7 +13,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: "JetBrains Mono", monospace;
+	font-family: 'Montserrat', sans-serif;
 	background-color: var(--scheme1);
 }
 
@@ -21,8 +23,9 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	-webkit-box-shadow: 1px 15px 13px 0px rgba(0,0,0,0.03), 1px 15px 13px 0px rgba(0,0,0,0.03); 
-	box-shadow: 1px 15px 13px 0px rgba(0,0,0,0.03), 1px 15px 13px 0px rgba(0,0,0,0.03);
+	border-bottom: 3px solid var(--scheme3);
+	/* -webkit-box-shadow: 1px 15px 13px 0px rgba(0,0,0,0.03), 1px 15px 13px 0px rgba(0,0,0,0.03); 
+	box-shadow: 1px 15px 13px 0px rgba(0,0,0,0.03), 1px 15px 13px 0px rgba(0,0,0,0.03); */
 }
 
 .nav li {
@@ -36,7 +39,7 @@ body {
 	float: right;
 	text-decoration: none;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 8px 10px;
 	color: var(--scheme1);
 }
 
@@ -68,13 +71,14 @@ body {
 	background-color: var(--scheme2);
 	color: var(--scheme1);
 	font-size: 12px;
-	border-radius: 4px;
+	/* border-radius: 4px; */
 }
 
 .containColumn {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 .containLayer {
@@ -83,38 +87,55 @@ body {
 	justify-content: center;
 	background-color: var(--scheme1);
 	height: auto;
-	padding-bottom: 100px;
+	width: 100%;;
 }
 
 .leftText {
+	display: flex;
+	justify-content: center;
 	text-align: center;
 	margin-top: 80px;
+	width: auto;
+	color: var(--scheme3);
 	width: 300px;
-	color: var(--scheme3);
 }
 
-.rightText {
-	margin-top: 80px;
-	padding-left: 75px;
-	width: 600px;
-	color: var(--scheme3);
-}
-
-.containerButton {
-	margin-top: 30px;
+.info-title {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
 
+.emoj-cont {
+	padding: 0px 8px;
+}
+
+.rightText {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 80px;
+	width: auto;
+	color: var(--scheme3);
+	width: 600px;
+}
+
+.containerButton {
+	text-align: center;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+}
+
 .styleButton {
-	background-color: var(--scheme2);
-	border: none;
-	color: var(--scheme1);
+	background-color: var(--scheme1);
+	border: 3px solid var(--scheme2);
+	color: var(--scheme2);
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	border-radius: 50%;
+	border-radius: 12px;
 	width: 48px;
 	height: 48px;
 	margin: 0px 8px;
@@ -126,7 +147,7 @@ body {
 }
 
 .resumeButton {
-	border-radius: 6px;
+	/* border-radius: 6px; */
 	background-color: var(--scheme2);
 	border: none;
 	color: var(--scheme1);
@@ -196,8 +217,8 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27); 
-	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27);
+	/* -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27); 
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.27); */
 }
 
 .icon-skill {
@@ -251,16 +272,16 @@ body {
 }
 
 .experienceShow {
-	width: 400px;
+	width: 600px;
 	height: 50px;
 	margin-top: 36px;
 	background-color: var(--scheme2);
 	color: var(--scheme1);
 	height: auto;
 	padding: 10px 20px;
-	border-radius: 12px;
-	-webkit-box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.18), 1px 1px 13px 0px rgba(0,0,0,0.18); 
-	box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.18), 1px 1px 13px 0px rgba(0,0,0,0.18);
+	/* border-radius: 12px; */
+	/* -webkit-box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.18), 1px 1px 13px 0px rgba(0,0,0,0.18); 
+	box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.18), 1px 1px 13px 0px rgba(0,0,0,0.18); */
 }
 
 
@@ -325,7 +346,6 @@ body {
  }
 
 .thrText {
-	margin-top: 80px; 
 	color: var(--scheme3);
 	width: 300px;
 	text-align: center;
@@ -357,7 +377,7 @@ body {
 	text-align: center;
 	font-size: 16px;
 	height: 100%;
-	border-radius: 4px; 
+	/* border-radius: 4px;  */
 	font-family: "Roboto Mono", monospace;
 }
 
@@ -539,7 +559,7 @@ body {
 	border-radius: 50%;
 	margin-left: 10px; 
 	margin-right: 10px; 
-	box-shadow: inset 0 0 0 2.5px var(--scheme3);
+	/* box-shadow: inset 0 0 0 2.5px var(--scheme3); */
 }
 
 .colorDot:hover {
@@ -640,7 +660,6 @@ body {
 
 	.rightText {
 		width: auto; 
-		padding-right: 75px; 
 	}
 
 	.finalLayer {
@@ -740,7 +759,6 @@ body {
 
 	.rightText {
 		width: auto; 
-		padding-right: 75px; 
 	}
 
 	.finalLayer {
@@ -902,6 +920,7 @@ body {
 		display: flex; 
 		flex-direction: column; 
 		text-align: left; 
+		align-items: center;
 	}
 
 	.circleSkill {

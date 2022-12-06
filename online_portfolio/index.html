@@ -6,10 +6,9 @@
 	<link rel="shortcut icon" type="image/x-icon" href="lightTitle.png" id="title-link">
 	<link href="defaultLightMaster.css" rel="stylesheet" id="theme-link">
 	<script src="https://kit.fontawesome.com/49cb6d7643.js" crossorigin="anonymous"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;1,300&display=swap" rel="stylesheet">	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 	<!-- navbar --> 
@@ -17,57 +16,49 @@
 		<li><a href="#4" class="scrollTo">Projects</a></li>
 		<li><a href="#3" class="scrollTo">Experience</a></li>
 		<li><a href="#2" class="scrollTo">Skills</a></li>
-		<li><a href="#1" class="scrollTo">About</a></li>
+		<li><a href="#1" class="scrollTo">Home</a></li>
 	</div>	
 	<!-- section1 -->
 	<div class="containColumn" id="1"> 
 		<div class="containLayer"> 
-
 			<div class="leftText">
-				<h1>Richard Hua</h1>
-				<h5>2B Computer Science Student</h5>
-				<p>Full Stack Developer</p>
-				<h3>Contacts</h3>
-				<div class="containerButton" style="margin: 10px;">
-					<form id="linkedin" action="https://www.linkedin.com/in/huarichard0/" target="_blank">
-						<button type="submit" class="styleButton"><i class="fab fa-linkedin-in fa-2x"></i></button>
-						<div id="bp1" id="mobile-style">
-							<div class="triangle"></div>
-							<div class="button-purpose">Linkedin</div> 
-						</div>
-					</form>
-					<form id="github" action="https://github.com/hua0-richard" target="_blank">
-						<button class="styleButton"><i class="fab fa-github fa-2x"></i></button>
-						<div id="bp2" id="mobile-style">
-							<div class="triangle"></div>
-							<div class="button-purpose">Github</div> 
-						</div>
-					</form>
-					<form id="resume" action="resumePDF.pdf" target="_blank">
-						<button class="styleButton"><i class="fa-solid fa-file-lines fa-2x"></i></button>
-						<div id="bp3" id="mobile-style">
-							<div class="triangle"></div>
-							<div class="button-purpose">CV</div> 
-						</div>
-					</form>
+				<div>
+					<h1 style = "font-size: 40px;">Richard Hua</h1>
+					<div class = "info-title"><h5>3rd Year Computer Science</h5><h3 class = "emoj-cont">&#128187</h3></div>
+					<div class = "info-title"><h5>University of Waterloo</h5><h3 class = "emoj-cont">&#127891</h3></div>
 				</div>
-				
-				<!-- old button
-				<form action="resumePDF.pdf" target="_blank">
-					<button class="resumeButton" style="font-family: 'Roboto Mono', monospace"><strong>Resume</strong></button>
-				</form>
-				-->
 			</div>
 
 
 			<div class="rightText">
-				<h1>About</h1>
-				<div id="mobileEdit3">
-					<h5>University of Waterloo, Computer Science Class of 2025</h5>
-					<p>I am an undergraduate Honours Computer Science student in my second year at the University of Waterloo.</p>
-					<p>Naturally, I enjoy many aspects of programming and computer science. More specifically, I enjoy making web apps and working with embedded systems. 
-						In my spare time , I work with the University's Formula Motorsports Team and spend much of my time
-						working on projects solo and with friends. </p>
+				<div>
+					<h1 style = "font-size: 40px;">Contacts</h1>
+					<h5>LinkedIn, Github, CV</h5>
+					<div id="mobileEdit3">
+						<div class="containerButton" style="margin: 10px;">
+							<form id="linkedin" action="https://www.linkedin.com/in/huarichard0/" target="_blank">
+								<button type="submit" class="styleButton"><i class="fab fa-linkedin-in fa-2x"></i></button>
+								<div id="bp1" id="mobile-style">
+									<div class="triangle"></div>
+									<div class="button-purpose">Linkedin</div> 
+								</div>
+							</form>
+							<form id="github" action="https://github.com/hua0-richard" target="_blank">
+								<button class="styleButton"><i class="fab fa-github fa-2x"></i></button>
+								<div id="bp2" id="mobile-style">
+									<div class="triangle"></div>
+									<div class="button-purpose">Github</div> 
+								</div>
+							</form>
+							<form id="resume" action="resumePDF.pdf" target="_blank">
+								<button class="styleButton"><i class="fa-solid fa-file-lines fa-2x"></i></button>
+								<div id="bp3" id="mobile-style">
+									<div class="triangle"></div>
+									<div class="button-purpose">CV</div> 
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -76,7 +67,7 @@
 
 <!-- Experience Section-->	
 	<div id="3" class="experienceLayer"> 
-		<h1 class="experienceTitle">Experience</h1>
+		<h1 class="experienceTitle" style = "font-size: 40px;">Experience</h1>
 
 		<div class="experiencetimeContainer">
 
@@ -125,68 +116,6 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="experienceTime">
-				<div class="decorationContainer">
-					<div class="lineTop"></div>
-					<i class="far fa-circle experienceDot"></i>
-					<div class="line"></div>
-				</div>	
-				<div class="experienceShow">
-					<div class="expand"><h3><strong>Ivey Accelerate</strong></h3>
-						<div class="expand-clicker"><div id="elab3"><i class="fas fa-chevron-down"></i><i style="display: none" class="fas fa-chevron-up"></i></div></div>
-					</div>
-					<h4>Ivey School of Business</h4>
-					<h6>April 2020 - May 2020</h6>
-					<div id="elabDesc3">
-						<p>Ivey Accelerate is a program designed for high school seniors, offered by the Western Ivey School of Business.</p>
-						<p>The program focused on Leadership, Financial Accounting, Negotiations, and Communications.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="experienceTime">
-				<div class="decorationContainer">
-					<div class="lineTop"></div>
-					<i class="far fa-circle experienceDot"></i>
-					<div class="line"></div>
-				</div>
-
-				<div class="experienceShow">
-					<div class="expand"><h3><strong>Upper Canada College Summer Camps</strong></h3>
-						<div class="expand-clicker"><div id="elab2"><i class="fas fa-chevron-down"></i><i style="display: none" class="fas fa-chevron-up"></i></div></div>
-					</div>
-					<h4>Program Instructor</h4>
-					<h6>June 2019 - August 2019</h6>
-					<div id="elabDesc2">
-						<p>Worked as a program instructor for Upper Canada College's <i>Coding Camp</i>.</p>
-						<p>Responsibilities invovled organizing and supervising program participants and teaching the fundamentals of programming</p>
-						<p>Assisted with preparing program materials and introduced meaningful and engaging course content.</p>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="experienceTime">
-				<div class="decorationContainer">
-					<div class="lineTop"></div>
-					<i class="far fa-circle experienceDot"></i>
-					<div class="line"></div>
-				</div>
-				<div class="experienceShow">
-					<div class="expand"><h3><strong>The Hospital for Sick Children</strong></h3>
-						<div class="expand-clicker"><div id="elab1"><i class="fas fa-chevron-down"></i><i style="display: none" class="fas fa-chevron-up"></i></div></div>
-					</div>
-					<h4>Assistant Researcher, Intern</h4>
-					<h6>August 2018</h6>
-					<div id="elabDesc1">
-						<p>Summer research intern at Dr. Cohn’s laboratory.</p>
-						<p>Paid close attention to lab procedures and mechanics. Significantly increased personal knowledge of biological systems and knowledge of laboratory procedures.</p> 
-						<p>Assisted with simple scripts where needed. Worked under the direction and guidance of lab supervisors.</p>
-					</div>
-				</div>
-			</div>
-
 		</div>
 
 	</div>

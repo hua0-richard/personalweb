@@ -1,7 +1,7 @@
 :root {
-	--scheme2: #2596be ;
+	--scheme2: #4782b3;
+	--scheme1: white;;
 	--scheme3: black;
-	--scheme1: white; 
 }
 
 /* #14397d  77b5d9 d7eaf3*/
@@ -174,7 +174,9 @@ body {
 }
 
 .secText {
+	width: 900px;
 	margin-top: 80px; 
+	font-size: 40px; 
 	color: var(--scheme3);
 }
 
@@ -197,6 +199,7 @@ body {
 	width: 300px;
 	display: flex;
 	justify-content: center;
+	color: var(--scheme3);
 }
 
 .skillIcon {
@@ -210,10 +213,12 @@ body {
 	margin-bottom: 10px;
 	margin-left: 20px;
 	margin-right: 20px;
-	height: 64px;
-	width: 64px;
-	border-radius: 50%;
-	background-color: var(--scheme2);
+	height: 54px;
+	width: 54px;
+	border-radius: 8px;
+	background-color: none;
+	border: 3px solid var(--scheme2);
+	color: var(--scheme2);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -222,7 +227,7 @@ body {
 }
 
 .icon-skill {
-	color: var(--scheme1);
+	color: var(--scheme2);
 }
 
 .skillGrouping {
@@ -235,6 +240,7 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	color: var(--scheme3);
 }
 
 .labelC{

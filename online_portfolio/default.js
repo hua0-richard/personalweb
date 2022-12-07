@@ -13,62 +13,6 @@ button.addEventListener("click", function() {
     }
 });
 
-
-//custom themes 
-const scheme1 = document.querySelector("#b1")
-const scheme2 = document.querySelector("#b2")
-const scheme3 = document.querySelector("#b3")
-const scheme4 = document.querySelector("#b4")
-const randomChoice = document.querySelector("#randomChoice")
-
-scheme1.addEventListener("click", function() {
-    theme.href="theme1.css"
-    titleIcon.href="title1.png"
-});
-
-scheme2.addEventListener("click", function() {
-    theme.href="theme2.css"
-    titleIcon.href="title2.png"
-});
-
-scheme3.addEventListener("click", function() {
-    theme.href="theme3.css"
-    titleIcon.href="title3.png"
-});
-
-scheme4.addEventListener("click", function() {
-    theme.href="theme4.css"
-    titleIcon.href="title4.png"
-});
-
-// random theme 
-function chooseTheme () {
-    const randomTheme = Math.random()
-    if (randomTheme >= 0 && randomTheme < 0.25 ) {
-        theme.href = "theme1.css"
-        titleIcon.href="title1.png"
-    }
-
-    else if (randomTheme >= 0.25 && randomTheme < 0.5) {
-        theme.href = "theme2.css"
-        titleIcon.href="title2.png"
-    }
-
-    else if (randomTheme >= 0.5 && randomTheme < 0.75) {
-        theme.href = "theme3.css"
-        titleIcon.href="title3.png"
-    }
-
-    else {
-        theme.href = "theme4.css"
-        titleIcon.href="title4.png"
-    }
-}
-
-randomChoice.addEventListener("click", function() {
-    chooseTheme();
-});
-
 filterSelection("all") 
 
 function filterSelection(c) {

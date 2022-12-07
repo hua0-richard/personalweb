@@ -520,9 +520,21 @@ body {
 }
 
 .projectWrite {
-	text-align: start; 
-	width: 400px; 
+	display: flex;
+	flex-direction: column;
+	width: 450px; 
 	padding-left: 50px;
+	justify-content: space-around;
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-align: left;
+	color: var(--scheme3);
+}
+
+.spaced {
+	padding-top: 16px;
+	padding-bottom: 16px; 
 }
 
 .colorselectContainer {
@@ -682,11 +694,15 @@ body {
 
 	.projectwriteContainer {
 		width: auto; 
+		font-size: 14px;
+		line-height: 150%;
+		letter-spacing: 1px;
 	}
 
 	.projectWrite {
+		display: flex;
+		justify-content: flex-start;
 		width: auto; 
-		text-align: center; 
 		padding-left: 0px; 
 	}
 
@@ -788,6 +804,13 @@ body {
 		width: auto; 
 		text-align: center; 
 		padding-left: 0px; 
+	}
+
+	.spaced {
+		font-size: 14px; 
+		text-align: left;
+		line-height: 150%;
+		letter-spacing: 1px;
 	}
 
 	.functional {

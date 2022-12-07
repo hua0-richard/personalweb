@@ -2,17 +2,6 @@ const button = document.querySelector(".light");
 const theme = document.querySelector("#theme-link"); 
 const titleIcon = document.querySelector("#title-link");
 
-button.addEventListener("click", function() {
-    if (theme.getAttribute("href") == "defaultLightMaster.css") {
-        theme.href = "defaultDarkMaster.css"
-        titleIcon.href = "darkTitle.png"
-    }
-    else {
-        theme.href = "defaultLightMaster.css"
-        titleIcon.href = "lightTitle.png"
-    }
-});
-
 filterSelection("all") 
 
 function filterSelection(c) {
@@ -105,9 +94,6 @@ function scrollAnchors(e, respond = null) {
 // expand descriptions
 const expand5 = document.getElementById("elab5");
 const expand4 = document.getElementById("elab4");
-const expand3 = document.getElementById("elab3");
-const expand2 = document.getElementById("elab2");
-const expand1 = document.getElementById("elab1");
 
 expand5.addEventListener("click", function() {
     const chevronDown = document.getElementsByClassName("fa-chevron-down");
@@ -136,51 +122,6 @@ expand4.addEventListener("click", function() {
         desc.style.display = "inline";
         chevronDown[1].style.display = "none";
         chevronUp[1].style.display = "inline";
-    }
-});
-
-expand3.addEventListener("click", function() {
-    const chevronDown = document.getElementsByClassName("fa-chevron-down");
-    const chevronUp = document.getElementsByClassName("fa-chevron-up");
-    const desc = document.getElementById("elabDesc3"); 
-    if (desc.style.display == "inline") {
-        chevronDown[2].style.display = "inline";
-        chevronUp[2].style.display = "none";
-        desc.style.display = "none";
-    } else {
-        desc.style.display = "inline";
-        chevronDown[2].style.display = "none";
-        chevronUp[2].style.display = "inline";
-    }
-});
-
-expand2.addEventListener("click", function() {
-    const chevronDown = document.getElementsByClassName("fa-chevron-down");
-    const chevronUp = document.getElementsByClassName("fa-chevron-up");
-    const desc = document.getElementById("elabDesc2"); 
-    if (desc.style.display == "inline") {
-        chevronDown[3].style.display = "inline";
-        chevronUp[3].style.display = "none";
-        desc.style.display = "none";
-    } else {
-        desc.style.display = "inline";
-        chevronDown[3].style.display = "none";
-        chevronUp[3].style.display = "inline";
-    }
-});
-
-expand1.addEventListener("click", function() {
-    const chevronDown = document.getElementsByClassName("fa-chevron-down");
-    const chevronUp = document.getElementsByClassName("fa-chevron-up");
-    const desc = document.getElementById("elabDesc1"); 
-    if (desc.style.display == "inline") {
-        chevronDown[4].style.display = "inline";
-        chevronUp[4].style.display = "none";
-        desc.style.display = "none";
-    } else {
-        desc.style.display = "inline";
-        chevronDown[4].style.display = "none";
-        chevronUp[4].style.display = "inline";
     }
 });
 

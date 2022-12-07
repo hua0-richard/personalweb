@@ -452,29 +452,6 @@ body {
 	text-decoration: none;
  }
 
- .light {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-	width: 50px;
-	position: fixed;
-	bottom: 110px;
-	right:40px;
-	z-index: 100;
-	border: none;
-	outline: none;
-	background-color: var(--scheme3);
-	color: var(--scheme1);
-	border-radius: 50%; 
- }
-
- .light:hover {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
- }
-
  .top:hover {
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);

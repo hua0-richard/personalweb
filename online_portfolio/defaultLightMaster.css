@@ -1,7 +1,8 @@
 :root {
-	--scheme1: #e8e9ec;
-	--scheme2: #2d539e;
-	--scheme3: #262a3f; 
+	--scheme1: #05385b;
+	--scheme2: #5cdb95;
+	--scheme3: #edf5e1;
+	--scheme4: #20688a; 
 }
 
 html {
@@ -75,6 +76,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 100%;
 }
 
 .containLayer {
@@ -89,14 +91,14 @@ body {
 .leftText {
 	text-align: center;
 	margin-top: 80px;
-	width: 300px;
+	width: 450px;
 	color: var(--scheme3);
 }
 
 .rightText {
 	margin-top: 80px;
 	padding-left: 75px;
-	width: 600px;
+	width: 450px;
 	color: var(--scheme3);
 }
 
@@ -269,8 +271,8 @@ body {
 	width: 400px;
 	height: 50px;
 	margin-top: 36px;
-	background-color: var(--scheme2);
-	color: var(--scheme1);
+	background-color: var(--scheme4);
+	color: var(--scheme3);
 	height: auto;
 	padding: 10px 20px;
 	border-radius: 12px;
@@ -378,8 +380,8 @@ body {
 
 .buttonGroup button {
 	margin-top: 10px;
-	background-color: var(--scheme3);
-	color: var(--scheme1);
+	background-color: var(--scheme4);
+	color: var(--scheme3);
 	border: 1px solid var(--scheme1);
 	cursor: pointer;
 	text-align: center;
@@ -512,12 +514,12 @@ body {
 	 width: 300px; 
 	 background-color: var(--scheme1);  
 	text-align: center; 
-	color: var(--scheme2);
+	color: var(--scheme4);
  }
 
 .projectFolder:hover {
 	cursor: pointer; 
-	color: var(--scheme3);
+	color: var(--scheme2);
 }
 
 .projectwriteContainer {
@@ -639,7 +641,26 @@ body {
 
 	.rightText {
 		width: auto; 
-		padding-right: 75px; 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.techRow {
+		display: flex;
+		width: 300px;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.techItem {
+		height: 40px;
+		padding: 12px 0px;
+		font-size: 18px;
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
 	}
 
 	.finalLayer {

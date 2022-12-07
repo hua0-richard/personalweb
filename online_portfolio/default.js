@@ -136,6 +136,7 @@ linkedin.addEventListener("mouseover", function() {
         return;
     }
     document.getElementById("bp1").style.display = "block";
+    document.getElementById("bp1").style.position = "absolute";
 });
 
 linkedin.addEventListener("mouseleave", function() {
@@ -147,6 +148,8 @@ github.addEventListener("mouseenter", function() {
         return;
     }
     document.getElementById("bp2").style.display = "block";
+    document.getElementById("bp2").style.position = "absolute";
+
 });
 
 github.addEventListener("mouseleave", function() {
@@ -158,6 +161,8 @@ resume.addEventListener("mouseenter", function() {
         return;
     }
     document.getElementById("bp3").style.display = "block";
+    document.getElementById("bp3").style.position = "absolute";
+
 });
 
 resume.addEventListener("mouseleave", function() {

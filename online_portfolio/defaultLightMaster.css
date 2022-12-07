@@ -46,11 +46,11 @@ body {
 }
 
 /* section 1 */
-#bp1 { margin-top: 5px; display: none; }
+#bp1 { margin-top: 55px; display: none; }
 
-#bp2 { margin-top: 5px; display: none; }
+#bp2 { margin-top: 55px; display: none; }
 
-#bp3 { margin-top: 5px; display: none; }
+#bp3 { margin-top: 55px; display: none; }
 
 .triangle {
 	width: 0; 
@@ -120,10 +120,23 @@ body {
 .containerButton {
 	margin-top: 30px;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
 
+#resume {
+	display: flex;
+	justify-content: center;
+}
+
+#github {
+	display: flex;
+	justify-content: center;
+}
+
+#linkedin {
+	display: flex;
+	justify-content: center;
+}
 .styleButton {
 	background-color: var(--scheme2);
 	border: none;

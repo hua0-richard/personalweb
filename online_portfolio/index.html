@@ -6,10 +6,10 @@
 	<link rel="shortcut icon" type="image/x-icon" href="lightTitle.png" id="title-link">
 	<link href="defaultLightMaster.css" rel="stylesheet" id="theme-link">
 	<script src="https://kit.fontawesome.com/49cb6d7643.js" crossorigin="anonymous"></script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;1,300&display=swap" rel="stylesheet">	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 	<!-- navbar --> 
@@ -25,8 +25,8 @@
 
 			<div class="leftText">
 				<h1>Richard Hua</h1>
-				<h5>2B Computer Science Student</h5>
-				<p>Full Stack Developer</p>
+				<h5>3rd Year, Computer Science</h5>
+				<p>University of Waterloo</p>
 				<h3>Contacts</h3>
 				<div class="containerButton" style="margin: 10px;">
 					<form id="linkedin" action="https://www.linkedin.com/in/huarichard0/" target="_blank">
@@ -51,23 +51,26 @@
 						</div>
 					</form>
 				</div>
-				
-				<!-- old button
-				<form action="resumePDF.pdf" target="_blank">
-					<button class="resumeButton" style="font-family: 'Roboto Mono', monospace"><strong>Resume</strong></button>
-				</form>
-				-->
 			</div>
 
 
 			<div class="rightText">
 				<h1>About</h1>
 				<div id="mobileEdit3">
-					<h5>University of Waterloo, Computer Science Class of 2025</h5>
-					<p>I am an undergraduate Honours Computer Science student in my second year at the University of Waterloo.</p>
-					<p>Naturally, I enjoy many aspects of programming and computer science. More specifically, I enjoy making web apps and working with embedded systems. 
-						In my spare time , I work with the University's Formula Motorsports Team and spend much of my time
-						working on projects solo and with friends. </p>
+					<h5>Technologies</h5>
+						<div class = "techRow">
+							<div class ="techItem"><span class="material-symbols-outlined">arrow_right</span>React</div>
+							<div class ="techItem"><span class="material-symbols-outlined">arrow_right</span>Angular</div>
+						</div>
+						<div class = "techRow">
+							<div class ="techItem"><span class="material-symbols-outlined">arrow_right</span>Node.js</div>
+							<div class ="techItem"><span class="material-symbols-outlined">arrow_right</span>MongoDB</div>
+						</div>
+						<div class = "techRow">
+							<div class ="techItem"><span class="material-symbols-outlined">arrow_right</span>Python</div>
+							<div class ="techItem"><span class="material-symbols-outlined">arrow_right</span>C++</div>
+						</div>
+
 				</div>
 			</div>
 
@@ -116,174 +119,12 @@
 					<h4>Assistant Engineer, Intern</h4>
 					<h6>May 2021 - August 2021</h6>
 					<div id="elabDesc4">
-						<p>Worked on the open source data engine openLooKeng.</p> 
-						<p>Overhauled the existing automated testing programs with the goal of creating a more streamlined and efficient testing process.</p>
-						<p>Implemented more rigorous testing methods of the Distributed Snapshot feature. Newly implemented methodology includes "killing" worker nodes at specific Snapshot.</p>
-						<p>Added support for testing of concurrent Queries.</p>
-						<p>Implemented warning messages for Query retries and the triggering of the Distributed Snapshot Feautre. Removed deprecated features from the data engine and resolved several bugs.</p>
-						<p>Worked with Quality Assurance to reproduce and document issues. Performed verification and validation testing, and documented new issues.</p>
+						<div class="grouped"><span class="material-symbols-outlined">arrow_right</span><p>Worked on the open source data engine, openLooKeng.</p></div>
+						<div class="grouped"><span class="material-symbols-outlined">arrow_right</span><p>Implemented more rigorous testing methods of the Distributed Snapshot feature.</p></div>
+						<div class="grouped"><span class="material-symbols-outlined">arrow_right</span><p>Removed deprecated features from the data engine.</p></div>
+						<div class="grouped"><span class="material-symbols-outlined">arrow_right</span><p>Worked with QA to reproduce and document issues.</p></div>
 					</div>
 				</div>
-			</div>
-
-			<div class="experienceTime">
-				<div class="decorationContainer">
-					<div class="lineTop"></div>
-					<i class="far fa-circle experienceDot"></i>
-					<div class="line"></div>
-				</div>	
-				<div class="experienceShow">
-					<div class="expand"><h3><strong>Ivey Accelerate</strong></h3>
-						<div class="expand-clicker"><div id="elab3"><i class="fas fa-chevron-down"></i><i style="display: none" class="fas fa-chevron-up"></i></div></div>
-					</div>
-					<h4>Ivey School of Business</h4>
-					<h6>April 2020 - May 2020</h6>
-					<div id="elabDesc3">
-						<p>Ivey Accelerate is a program designed for high school seniors, offered by the Western Ivey School of Business.</p>
-						<p>The program focused on Leadership, Financial Accounting, Negotiations, and Communications.</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="experienceTime">
-				<div class="decorationContainer">
-					<div class="lineTop"></div>
-					<i class="far fa-circle experienceDot"></i>
-					<div class="line"></div>
-				</div>
-
-				<div class="experienceShow">
-					<div class="expand"><h3><strong>Upper Canada College Summer Camps</strong></h3>
-						<div class="expand-clicker"><div id="elab2"><i class="fas fa-chevron-down"></i><i style="display: none" class="fas fa-chevron-up"></i></div></div>
-					</div>
-					<h4>Program Instructor</h4>
-					<h6>June 2019 - August 2019</h6>
-					<div id="elabDesc2">
-						<p>Worked as a program instructor for Upper Canada College's <i>Coding Camp</i>.</p>
-						<p>Responsibilities invovled organizing and supervising program participants and teaching the fundamentals of programming</p>
-						<p>Assisted with preparing program materials and introduced meaningful and engaging course content.</p>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="experienceTime">
-				<div class="decorationContainer">
-					<div class="lineTop"></div>
-					<i class="far fa-circle experienceDot"></i>
-					<div class="line"></div>
-				</div>
-				<div class="experienceShow">
-					<div class="expand"><h3><strong>The Hospital for Sick Children</strong></h3>
-						<div class="expand-clicker"><div id="elab1"><i class="fas fa-chevron-down"></i><i style="display: none" class="fas fa-chevron-up"></i></div></div>
-					</div>
-					<h4>Assistant Researcher, Intern</h4>
-					<h6>August 2018</h6>
-					<div id="elabDesc1">
-						<p>Summer research intern at Dr. Cohn’s laboratory.</p>
-						<p>Paid close attention to lab procedures and mechanics. Significantly increased personal knowledge of biological systems and knowledge of laboratory procedures.</p> 
-						<p>Assisted with simple scripts where needed. Worked under the direction and guidance of lab supervisors.</p>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-	</div>
-
-	<!-- skills section (previously section2)  --> 
-	<div class="secondaryLayer" id="2">
-		<h1 class="secText">Technical skills</h1>
-	</div>
-
-	<div class="fill">
-		<div class="showBigContainer">
-			<div class="skillCat" style="margin-bottom: 30px;">
-				<div class="skillTitle"><h3>Frontend</h3></div>
-				<div class="skillIcon">
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-solid fa-code fa-2x"></i></i></div>
-						<div class="skillText">HTML/CSS</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-brands fa-angular fa-2x"></i></div>
-						<div class="skillText">Angular</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-brands fa-bootstrap fa-2x"></i></div>
-						<div class="skillText">Boostrap</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-brands fa-npm fa-2x"></i></div>
-						<div class="skillText">npm</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-brands fa-react fa-2x"></i></div>
-						<div class="skillText">React</div>
-					</div>
-				</div> 
-			</div>
-
-			<div class="skillCat" style="margin-bottom: 30px;">
-				<div class="skillTitle"><h3>Backend</h3></div>
-				<div class="skillIcon">
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-solid fa-database fa-2x"></i></div>
-						<div class="skillText">MongoDB</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-brands fa-node fa-2x"></i></div>
-						<div class="skillText">node.js</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-solid fa-gears fa-2x"></i></div>
-						<div class="skillText">express.js</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><div class="icon-skill" style="font-size: 36px; font-family: sans-serif;">m</div></div>
-						<div class="skillText">mongoose</div>
-					</div>
-				</div> 
-			</div>
-
-			<div class="skillCat" style="margin-bottom: 30px;">
-				<div class="skillTitle"><h3>Languages</h3></div>
-				<div class="skillIcon">
-					<div class="skillGrouping">
-						<div class="circleSkill"><div class="icon-skill" style="font-size: 24px; font-family: sans-serif;">C</div></div>
-						<div class="skillText">C</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><div class="icon-skill" style="font-size: 24px; font-family: sans-serif;">C++</div></div>
-						<div class="skillText">C++</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-brands fa-js fa-2x"></i></div>
-						<div class="skillText">JavaScript</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-brands fa-python fa-2x"></i></div>
-						<div class="skillText">Python</div>
-					</div>
-				</div> 
-			</div>
-
-			<div class="skillCat" style="margin-bottom: 30px;">
-				<div class="skillTitle"><h3>Technologies</h3></div>
-				<div class="skillIcon">
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-brands fa-git-alt fa-2x"></i></div>
-						<div class="skillText">Git</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-solid fa-terminal fa-lg"></i></div>
-						<div class="skillText">Bash</div>
-					</div>
-					<div class="skillGrouping">
-						<div class="circleSkill"><i class="icon-skill fa-solid fa-atom fa-2x"></i></i></div>
-						<div class="skillText">Electron</div>
-					</div>
-				</div> 
 			</div>
 		</div>
 

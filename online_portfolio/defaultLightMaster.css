@@ -11,7 +11,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: "JetBrains Mono", monospace;
+	font-family: 'Roboto Mono', monospace;
 	background-color: var(--scheme1);
 }
 
@@ -98,6 +98,21 @@ body {
 	padding-left: 75px;
 	width: 600px;
 	color: var(--scheme3);
+}
+
+.techRow {
+	display: flex;
+	width: 80%;
+	align-items: center;
+}
+
+.techItem {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-right: 48px;
+	height: 40px;
 }
 
 .containerButton {
@@ -261,6 +276,19 @@ body {
 	border-radius: 12px;
 	-webkit-box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.18), 1px 1px 13px 0px rgba(0,0,0,0.18); 
 	box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.18), 1px 1px 13px 0px rgba(0,0,0,0.18);
+}
+
+.experienceShow p {
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 1px;
+	padding-left: 8px;
+}
+
+.grouped {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 

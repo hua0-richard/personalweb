@@ -1,7 +1,8 @@
 :root {
-	--scheme1: #e8e9ec;
-	--scheme2: #2d539e;
-	--scheme3: #262a3f; 
+	--scheme1: #05385b;
+	--scheme2: #5cdb95;
+	--scheme3: #edf5e1;
+	--scheme4: #20688a; 
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 
 body {
 	margin: 0;
-	font-family: "JetBrains Mono", monospace;
+	font-family: 'Roboto Mono', monospace;
 	background-color: var(--scheme1);
 }
 
@@ -45,11 +46,11 @@ body {
 }
 
 /* section 1 */
-#bp1 { margin-top: 5px; display: none; }
+#bp1 { margin-top: 55px; display: none; }
 
-#bp2 { margin-top: 5px; display: none; }
+#bp2 { margin-top: 55px; display: none; }
 
-#bp3 { margin-top: 5px; display: none; }
+#bp3 { margin-top: 55px; display: none; }
 
 .triangle {
 	width: 0; 
@@ -75,6 +76,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 100%;
 }
 
 .containLayer {
@@ -89,24 +91,52 @@ body {
 .leftText {
 	text-align: center;
 	margin-top: 80px;
-	width: 300px;
+	width: 450px;
 	color: var(--scheme3);
 }
 
 .rightText {
 	margin-top: 80px;
 	padding-left: 75px;
-	width: 600px;
+	width: 450px;
 	color: var(--scheme3);
+}
+
+.techRow {
+	display: flex;
+	width: 80%;
+	align-items: center;
+}
+
+.techItem {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-right: 48px;
+	height: 40px;
 }
 
 .containerButton {
 	margin-top: 30px;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
 }
 
+#resume {
+	display: flex;
+	justify-content: center;
+}
+
+#github {
+	display: flex;
+	justify-content: center;
+}
+
+#linkedin {
+	display: flex;
+	justify-content: center;
+}
 .styleButton {
 	background-color: var(--scheme2);
 	border: none;
@@ -254,13 +284,26 @@ body {
 	width: 400px;
 	height: 50px;
 	margin-top: 36px;
-	background-color: var(--scheme2);
-	color: var(--scheme1);
+	background-color: var(--scheme4);
+	color: var(--scheme3);
 	height: auto;
 	padding: 10px 20px;
 	border-radius: 12px;
 	-webkit-box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.18), 1px 1px 13px 0px rgba(0,0,0,0.18); 
 	box-shadow: 1px 1px 13px 0px rgba(0,0,0,0.18), 1px 1px 13px 0px rgba(0,0,0,0.18);
+}
+
+.experienceShow p {
+	font-size: 14px;
+	line-height: 150%;
+	letter-spacing: 1px;
+	padding-left: 8px;
+}
+
+.grouped {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 
@@ -350,8 +393,8 @@ body {
 
 .buttonGroup button {
 	margin-top: 10px;
-	background-color: var(--scheme3);
-	color: var(--scheme1);
+	background-color: var(--scheme4);
+	color: var(--scheme3);
 	border: 1px solid var(--scheme1);
 	cursor: pointer;
 	text-align: center;
@@ -392,9 +435,13 @@ body {
 }
 
 .footerInner {
-	width: 300px;
-	text-align: start; 
+	width: 100%;
 	font-size: 12px; 
+	height: 100px; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
 
@@ -416,29 +463,6 @@ body {
 	color: var(--scheme1);
 	border-radius: 50%; 
 	text-decoration: none;
- }
-
- .light {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-	width: 50px;
-	position: fixed;
-	bottom: 110px;
-	right:40px;
-	z-index: 100;
-	border: none;
-	outline: none;
-	background-color: var(--scheme3);
-	color: var(--scheme1);
-	border-radius: 50%; 
- }
-
- .light:hover {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
  }
 
  .top:hover {
@@ -480,12 +504,12 @@ body {
 	 width: 300px; 
 	 background-color: var(--scheme1);  
 	text-align: center; 
-	color: var(--scheme2);
+	color: var(--scheme4);
  }
 
 .projectFolder:hover {
 	cursor: pointer; 
-	color: var(--scheme3);
+	color: var(--scheme2);
 }
 
 .projectwriteContainer {
@@ -513,39 +537,6 @@ body {
 	flex-direction: column; 
 	justify-content: center;
 	width: 300px; 
-}
-
-.colorChoice {
-	display: flex; 
-	flex-direction: row;
-	justify-content: center; 
-	margin-bottom: 15px; 
-	cursor: pointer;
-	color: var(--scheme3)
-}
-
-.colorRandom {
-	display: flex; 
-	flex-direction: column; 
-	justify-content: center;
-	width: 600px;
-	color: var(--scheme3)
-}
-
-.colorDot {
-	height: 15px; 
-	width: 15px; 
-	background-color: var(--scheme3);
-	border-radius: 50%;
-	margin-left: 10px; 
-	margin-right: 10px; 
-	box-shadow: inset 0 0 0 2.5px var(--scheme3);
-}
-
-.colorDot:hover {
-	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	transform: scale(1.1);
 }
 
 .lastContainer {
@@ -640,7 +631,26 @@ body {
 
 	.rightText {
 		width: auto; 
-		padding-right: 75px; 
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.techRow {
+		display: flex;
+		width: 300px;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+	.techItem {
+		height: 40px;
+		padding: 12px 0px;
+		font-size: 18px;
+		display: flex;
+		width: 100%;
+		justify-content: flex-start;
 	}
 
 	.finalLayer {

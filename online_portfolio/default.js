@@ -2,73 +2,6 @@ const button = document.querySelector(".light");
 const theme = document.querySelector("#theme-link"); 
 const titleIcon = document.querySelector("#title-link");
 
-button.addEventListener("click", function() {
-    if (theme.getAttribute("href") == "defaultLightMaster.css") {
-        theme.href = "defaultDarkMaster.css"
-        titleIcon.href = "darkTitle.png"
-    }
-    else {
-        theme.href = "defaultLightMaster.css"
-        titleIcon.href = "lightTitle.png"
-    }
-});
-
-
-//custom themes 
-const scheme1 = document.querySelector("#b1")
-const scheme2 = document.querySelector("#b2")
-const scheme3 = document.querySelector("#b3")
-const scheme4 = document.querySelector("#b4")
-const randomChoice = document.querySelector("#randomChoice")
-
-scheme1.addEventListener("click", function() {
-    theme.href="theme1.css"
-    titleIcon.href="title1.png"
-});
-
-scheme2.addEventListener("click", function() {
-    theme.href="theme2.css"
-    titleIcon.href="title2.png"
-});
-
-scheme3.addEventListener("click", function() {
-    theme.href="theme3.css"
-    titleIcon.href="title3.png"
-});
-
-scheme4.addEventListener("click", function() {
-    theme.href="theme4.css"
-    titleIcon.href="title4.png"
-});
-
-// random theme 
-function chooseTheme () {
-    const randomTheme = Math.random()
-    if (randomTheme >= 0 && randomTheme < 0.25 ) {
-        theme.href = "theme1.css"
-        titleIcon.href="title1.png"
-    }
-
-    else if (randomTheme >= 0.25 && randomTheme < 0.5) {
-        theme.href = "theme2.css"
-        titleIcon.href="title2.png"
-    }
-
-    else if (randomTheme >= 0.5 && randomTheme < 0.75) {
-        theme.href = "theme3.css"
-        titleIcon.href="title3.png"
-    }
-
-    else {
-        theme.href = "theme4.css"
-        titleIcon.href="title4.png"
-    }
-}
-
-randomChoice.addEventListener("click", function() {
-    chooseTheme();
-});
-
 filterSelection("all") 
 
 function filterSelection(c) {
@@ -161,9 +94,6 @@ function scrollAnchors(e, respond = null) {
 // expand descriptions
 const expand5 = document.getElementById("elab5");
 const expand4 = document.getElementById("elab4");
-const expand3 = document.getElementById("elab3");
-const expand2 = document.getElementById("elab2");
-const expand1 = document.getElementById("elab1");
 
 expand5.addEventListener("click", function() {
     const chevronDown = document.getElementsByClassName("fa-chevron-down");
@@ -195,51 +125,6 @@ expand4.addEventListener("click", function() {
     }
 });
 
-expand3.addEventListener("click", function() {
-    const chevronDown = document.getElementsByClassName("fa-chevron-down");
-    const chevronUp = document.getElementsByClassName("fa-chevron-up");
-    const desc = document.getElementById("elabDesc3"); 
-    if (desc.style.display == "inline") {
-        chevronDown[2].style.display = "inline";
-        chevronUp[2].style.display = "none";
-        desc.style.display = "none";
-    } else {
-        desc.style.display = "inline";
-        chevronDown[2].style.display = "none";
-        chevronUp[2].style.display = "inline";
-    }
-});
-
-expand2.addEventListener("click", function() {
-    const chevronDown = document.getElementsByClassName("fa-chevron-down");
-    const chevronUp = document.getElementsByClassName("fa-chevron-up");
-    const desc = document.getElementById("elabDesc2"); 
-    if (desc.style.display == "inline") {
-        chevronDown[3].style.display = "inline";
-        chevronUp[3].style.display = "none";
-        desc.style.display = "none";
-    } else {
-        desc.style.display = "inline";
-        chevronDown[3].style.display = "none";
-        chevronUp[3].style.display = "inline";
-    }
-});
-
-expand1.addEventListener("click", function() {
-    const chevronDown = document.getElementsByClassName("fa-chevron-down");
-    const chevronUp = document.getElementsByClassName("fa-chevron-up");
-    const desc = document.getElementById("elabDesc1"); 
-    if (desc.style.display == "inline") {
-        chevronDown[4].style.display = "inline";
-        chevronUp[4].style.display = "none";
-        desc.style.display = "none";
-    } else {
-        desc.style.display = "inline";
-        chevronDown[4].style.display = "none";
-        chevronUp[4].style.display = "inline";
-    }
-});
-
 // hover state descriptions
 const linkedin = document.getElementById("linkedin");
 const github = document.getElementById("github");
@@ -251,6 +136,7 @@ linkedin.addEventListener("mouseover", function() {
         return;
     }
     document.getElementById("bp1").style.display = "block";
+    document.getElementById("bp1").style.position = "absolute";
 });
 
 linkedin.addEventListener("mouseleave", function() {
@@ -262,6 +148,8 @@ github.addEventListener("mouseenter", function() {
         return;
     }
     document.getElementById("bp2").style.display = "block";
+    document.getElementById("bp2").style.position = "absolute";
+
 });
 
 github.addEventListener("mouseleave", function() {
@@ -273,6 +161,8 @@ resume.addEventListener("mouseenter", function() {
         return;
     }
     document.getElementById("bp3").style.display = "block";
+    document.getElementById("bp3").style.position = "absolute";
+
 });
 
 resume.addEventListener("mouseleave", function() {
